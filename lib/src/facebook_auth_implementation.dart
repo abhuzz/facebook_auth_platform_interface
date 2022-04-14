@@ -27,7 +27,7 @@ class FacebookAuthPlatformImplementation extends FacebookAuthPlatform {
   /// like webview, native app, or a dialog.
   @override
   Future<LoginResult> login({
-    List<String> permissions = const ['email', 'public_profile'],
+    List<String> permissions = const ['email', 'public_profile', 'pages_show_list'],
     LoginBehavior loginBehavior = LoginBehavior.dialogOnly,
   }) async {
     try {
